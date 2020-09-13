@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'aboutUs/css/about_us.css' %}">
+    <link rel="stylesheet" href="{% static 'aboutUs/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'aboutUs/css/header.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+
+
+    <div class="circle"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    
+    <header class="header-main">
+
+        <div class="logo-main">
+            <img src="{% static 'aboutUs/images/LOGO.svg' %}" alt="">
+            <div>knowboxx</div>
+        </div>
+
+
+        <div class="header-menu">
+
+            <a href="{% url 'homepage' %}">
+                <button>Home</button>
+            </a>
+            <a href="{% url 'aboutus' %}">
+                <button>About Us</button>
+            </a>
+            <a href="{% url 'coursespage' %}">
+                <button>Courses</button>
+            </a>
+            <a href="{% url 'testspage' %}">
+                <button>Test</button>
+            </a>
+            <a href="{% url 'contactpage' %}">
+                <button>Contact Us</button>
+            </a>
+
+        </div>
+
+        <div class="header-end"> </div>
+
+    </header>
+    
+    <br><br><br><br><br>
+
+    <div class="about-us-main">
+
+        <div class="border-1"></div>
+        <p>ABOUT US</p>
+        <div class="border-2"></div>
+    
+    </div>
+
+    <div class="who-are-we">
+
+        <div class="who-are-we-text">
+            <p class="who-are-we-head">Who are we?</p>
+            <p class="who-are-we-cont">A team of young and determined industry experts graduated from IITs/NITs keen on helping young minds learn. Our team comprises of versatile and dedicated teachers experienced in teaching in American and Indian schools. We stand together to bring quality education to students right in the comfort of their homes!</p>
+        </div>
+
+        <img src="{% static 'aboutUs/images/aboutus vector1.svg' %}" alt="">
+
+    </div>
+
+    <div class="mission-vision">
+
+        <div class="mission">
+
+            <img src="{% static 'aboutUs/images/aboutus vector2.svg' %}" alt="">
+            
+            <div class="mission-text">
+                <p class="mission-head">Our Mission</p>
+                <p class="mission-cont">To help students learn by understanding and visualizing, than through rote learning.</p>
+            </div>
+    
+        </div>
+
+
+
+        <div class="vision">
+            
+            <div class="vision-text">
+                <p class="vision-head">Our vision</p>
+                <p class="vision-cont">To help every individual optimize from their thinking capacity and apply it in real life.</p>
+            </div>
+
+            <img src="{% static 'aboutUs/images/aboutus vector3.svg' %}" alt="">
+            
+    
+        </div>
+
+    </div>
+
+    <div class="what-we-do">
+
+        <div class="what-we-do-text">
+            <p class="what-we-do-head">What we do?</p>
+            <p class="what-we-do-cont">Knowboxx is an Indian Ed-Tech company to help K-12 students learn and understand. We aim to provide school children with a LIVE tutoring platform combined with ONLINE teaching. Our programmes are highly interactive, engaging and personalized to empower bright minds. We wish to beat the system of rote learning and help students enjoy studying. </p>
+        </div>
+
+        <img src="{% static 'aboutUs/images/aboutus vector4.svg' %}" alt="">
+
+    </div>
+    
+    <div class="book-now">
+
+        <div class="book-now-text">
+
+            <div class="text">Text Prompt for Booking a Free Class</div>
+            <button class="book-now-btn">Book Now ></button>
+
+        </div>
+
+        <img src="{% static 'aboutUs/images/aboutus vector5.svg' %}" alt="">
+
+    </div>
+
+    <footer class="footer-main">
+
+        <div class="heading">Follow Us</div>
+
+        <div class="social-media">
+            <img src="{% static 'aboutUs/images/fb-footer-icon.png' %}" alt="">
+            <img src="{% static 'aboutUs/images/footer-linkedin-icon.png' %}" alt="">
+            <img src="{% static 'aboutUs/images/footer-twitter-icon.png' %}" alt="">
+        </div>
+        
+        <div class="partingline"></div>
+
+        <div class="footer-end">
+
+            <p> &#169 knowboxx</p>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

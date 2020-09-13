@@ -1,0 +1,62 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Log In" %}{% endblock %}
+
+{% block content %}
+
+<h1 class="login-heading">{% trans "Log In" %}</h1>
+<div class="login-main">
+    <div class="login-div1">
+
+        <input type="text" placeholder="Mobile Number" class="mobile-no">
+
+        <div class="otp-div">
+
+            <button>Send OTP</button>
+            <input type="text" placeholder="OTP">
+
+        </div>
+
+        <button class="resend-otp">Resend OTP</button>
+
+    </div>
+
+    <div class="partition">
+
+        <h1>OR</h1>
+        <div></div>
+
+    </div>
+
+    <div class="login-div2">
+
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <div class="checkbox">
+            <input type="checkbox">
+            <p>Remember Me</p>
+        </div>
+
+    </div>
+
+</div>
+
+<br><br><br>
+
+<div class="login">
+
+    <button class="login-btn">Login</button>
+
+</div>
+
+<div class="signup-option">
+
+    <p> Don’t have an account? <span>Sign Up</span>
+
+</div>
+
+{% endblock %}

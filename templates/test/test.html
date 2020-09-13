@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tests/css/test.css' %}">
+    <link rel="stylesheet" href="{% static 'tests/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'tests/css/header.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+
+    <header>
+        <div class="container">
+
+            <div class="row" id="row1">
+                <img id="image1" src="{% static 'tests/images/LOGO.svg' %}">
+                <div id="div1">knowboxx</div>
+                <a href="{% url 'homepage' %}">
+                    <div id="div2">Home</div>
+                </a>
+                <a href="{% url 'aboutus' %}">
+                    <div id="div3">About Us</div>
+                </a>
+                <a href="{% url 'coursespage' %}">
+                    <div id="div5">Courses</div>
+                </a>
+                <a href="{% url 'testspage' %}">
+                    <div id="div4">Test</div>
+                </a>
+                <a href="{% url 'contactpage' %}">
+                    <div id="div6">Contact Us</div>
+                </a>
+                <a>
+                    <div id="page_login"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content-->
+    <div class="test_container">
+        <!--Circles-->
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+
+
+
+        <div id="test_series">
+            <div id="title">Knowboxx Test Series</div>
+
+            <div id="brief">Knowboxx Test Series Knowboxx Test Series Knowboxx Test Series Knowboxx Test</div>
+            <button type="button" class="btn btn-primary" id="test_btn">Sign in to Attempt</button>
+            <div id="events">UPCOMING EVENTS
+            </div>
+            <img id="test_img" src="{% static 'tests/images/Test 1.svg' %}">
+        </div>
+
+        <!--Upcoming Tests-->
+        <div class="container_test">
+            <div id="right_circle"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></div>
+            <div id="left_circle"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+            <div class="items">
+                <!--Test 1-->
+                <div id="test1">Test 1</div>
+                <div id="test_brief">Test Description goes here to explain what the test is for (like if it is for an
+                    olympiad)</div>
+                <div id="details">
+                    <div class="item1">Date</div>
+                    <div class="item1">Time</div>
+                </div>
+                <div id="details1">
+                    <div class="item2">Grade</div>
+                    <div class="item2">Subject</div>
+                </div>
+            </div>
+            <div class="items">
+                <!--Test 2-->
+                <div id="test1">Test 2</div>
+                <div id="test_brief">Test Description goes here to explain what the test is for (like if it is for an
+                    olympiad)</div>
+                <div id="details">
+                    <div class="item1">Date</div>
+                    <div class="item1">Time</div>
+                </div>
+                <div id="details1">
+                    <div class="item2">Grade</div>
+                    <div class="item2">Subject</div>
+                </div>
+            </div>
+            <div class="items">
+                <!--Test 3-->
+                <div id="test1">Test 3</div>
+                <div id="test_brief">Test Description goes here to explain what the test is for (like if it is for an
+                    olympiad)</div>
+                <div id="details">
+                    <div class="item1">Date</div>
+                    <div class="item1">Time</div>
+                </div>
+                <div id="details1">
+                    <div class="item2">Grade</div>
+                    <div class="item2">Subject</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="what_test_container">
+            <div id="what_series">What is Knowboxx Test Series?</div>
+            <div id="what_brief">Knowboxx Test Series Knowboxx Test Series Knowboxx Test Series Knowboxx Test Knowboxx
+                Test Series Knowboxx Test Series Knowboxx Test Series Knowboxx Test Series Knowboxx Test Knowboxx </div>
+            <button type="button" class="btn btn-primary" id="test_btn2">Sign in to Attempt</button>
+            <img id="what_img" src="{% static 'tests/images/Test 2.svg' %}">
+        </div>
+
+        <!--Steps-->
+        <div id="step_container">
+
+            <div class="step">
+                <div id="step1">Step1</div>
+                <img id="step_img" src="{% static 'tests/images/Test 3.svg' %}">
+                <div id="step_topic">Sign In</div>
+                <div id="step_brief">Signup for free and Log In to attempt the Test</div>
+            </div>
+
+            <div class="step">
+                <div id="step1">Step2</div>
+                <img id="step_img" src="{% static 'tests/images/Test 4.svg' %}">
+                <div id="step_topic">On Time</div>
+                <div id="step_brief">At the prescribed time, the test will be visible once you have logged in</div>
+            </div>
+
+            <div class="step">
+                <div id="step1">Step3</div>
+                <img id="step_img" src="{% static 'tests/images/Test 5.svg' %}">
+                <div id="step_topic">Attempt Test</div>
+                <div id="step_brief">Attempt and submit the test in the prescribed time period, the clock will be
+                    running</div>
+            </div>
+
+            <div class="step">
+                <div id="step1">Step4</div>
+                <img id="step_img" src="{% static 'tests/images/Test 6.svg' %}">
+                <div id="step_topic">Leader Board</div>
+                <div id="step_brief">You will be able to see the report card, answer key and leaderboard in the
+                    "Completed" section.</div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+
+    <footer id="footer">
+
+        <div class="row" id="row3">
+            <div id="fdiv1">Follow Us</div>
+            <div id="fdiv2">knowboxx</div>
+            <div id="fdiv3"></div>
+            <div id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></div>
+            <a id="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a id="linkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a id="twitter" href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

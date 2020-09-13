@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'contactUs/css/contactus.css' %}">
+    <link rel="stylesheet" href="{% static 'contactUs/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'contactUs/css/header.css' %}">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <header class="header-main">
+
+        <div class="logo-main">
+            <img src="{% static 'contactUs/images/LOGO.svg' %}" alt="">
+            <div>knowboxx</div>
+        </div>
+
+
+        <div class="header-menu">
+
+            <a href="{% url 'homepage' %}">
+                <button>Home</button>
+            </a>
+            <a href="{% url 'aboutus' %}">
+                <button>About Us</button>
+            </a>
+            <a href="{% url 'coursespage' %}">
+                <button>Courses</button>
+            </a>
+            <a href="{% url 'testspage' %}">
+                <button>Test</button>
+            </a>
+            <a href="{% url 'contactpage' %}">
+                <button>Contact Us</button>
+            </a>
+
+        </div>
+
+        <div class="header-end"> </div>
+
+    </header>
+
+    <div class="circle"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <p class="contact-us-head">CONTACT US</p>
+
+    <div class="contactus-main">
+
+        <div class="feedback">
+
+            <p>SHARE YOUR FEEDBACK</p>
+            <form method="post" action="/contactus/">
+                <div class="feedback-form">
+
+                    {% csrf_token %}
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="Phone" name="phone">
+                    <select name="class" id="">
+                        <option value="class">Class</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <textarea cols="30" rows="10" placeholder="Message" name="message"></textarea>
+                    <button class="send-btn" type="submit">Send</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="whatsapp">
+
+            <h4>Contact us on Whatsapp</h4>
+            <p>Leave us a Message on Whatsapp and we’ll get back to you as soon as possible.</p>
+            <div> <img src="{% static 'contactUs/images/Whatsapp.png' %}" alt="">
+                <p>+91 999 888 9999</p>
+            </div>
+            <p>Send us a mail</p>
+            <div> <img src="{% static 'contactUs/images/mail icon.svg' %}" alt="">
+                <p>knowboxx@gmail.com</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer class="footer-main">
+
+        <div class="heading">Follow Us</div>
+
+        <div class="social-media">
+            <img src="{% static 'contactUs/images/fb-footer-icon.png' %}" alt="">
+            <img src="{% static 'contactUs/images/footer-linkedin-icon.png' %}" alt="">
+            <img src="{% static 'contactUs/images/footer-twitter-icon.png' %}" alt="">
+        </div>
+
+        <div class="partingline"></div>
+
+        <div class="footer-end">
+
+            <p> &#169 knowboxx</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

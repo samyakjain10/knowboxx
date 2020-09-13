@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'courses/css/course1.css' %}">
+    <link rel="stylesheet" href="{% static 'courses/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'courses/css/header.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header-main">
+
+        <div class="logo-main">
+            <img src="{% static 'courses/images/LOGO.svg' %}" alt="">
+            <div>knowboxx</div>
+        </div>
+
+        <div class="header-menu">
+
+            <a href="{% url 'homepage' %}">
+                <button>Home</button>
+            </a>
+            <a href="{% url 'aboutus' %}">
+                <button>About Us</button>
+            </a>
+            <a href="{% url 'coursespage' %}">
+                <button>Courses</button>
+            </a>
+            <a href="{% url 'testspage' %}">
+                <button>Test</button>
+            </a>
+            <a href="{% url 'contactpage' %}">
+                <button>Contact Us</button>
+            </a>
+
+        </div>
+
+        <div class="header-end"> </div>
+
+    </header>
+  
+
+    <div class="course-info">
+        <div class="info-1">
+            
+            <div class="div1">MATHS</div>
+            <div class="div2"> Level <b>Masterclass</b> </div>
+            <div class="div3">Class - <span>6</span>  |   Program -  <span>CBSE</span> </div>
+
+        </div>
+
+        <div class="info-2">        </div>
+    </div>
+
+
+    <div class="course-class">
+
+        <p>Class 6</p>
+
+        <div class="course-describe">
+            
+            <ul class="description">
+                <li> Competitive Exam Preparation (IMO, NSTSE)</li> 
+                <li>Concept-based Learning</li>  
+                <li>Doubt Solving Sessions</li>  
+                <li>Lots of practice, with Sample Papers, Mock Tests and Topic-wise practice papers</li> 
+            </ul>
+
+            <div class="course-btns">
+
+                <button class="trial-class">Book Trial Class</button>
+                <button class="enroll-now">Enroll Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="batches">
+
+        <p>Batches</p>
+
+        <div class="batch-day">
+
+            <div class="weekday">
+
+                <p>Weekday</p>
+                <br><br><br>
+                <div class="days">
+
+                    <p>Mon - Wed - Thu</p>
+                    <p>Thu - Fri</p>
+
+                </div>
+
+            </div>
+
+            <div class="weekend">
+
+                <p>Weekend</p>
+                <br><br><br>
+                <div class="days">
+
+                    <p>Fri -  Sat - Sun</p>
+                    <p>Sat - Sun</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pricing">
+
+        <br>
+        <h2>Pricing</h2>
+
+        <div class="pricing-main">
+            
+            <div class="ratio-duration">
+
+                <p>Teacher Student Ratio</p>
+
+                <div class="ratio-btns">
+                    <button>1:1</button>
+                    <button>1:n</button>
+                </div>
+                <br><br><br><br><br>
+                <p id="duration">This course is for the duration of 6 weeks. All material provided during the course will be available to you after course completion as well.</p>
+
+            </div>
+
+            <div class="price">
+                <br><br>
+                <p>Course Price</p>
+                <div>&#8377 4999</div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    
+    <footer class="footer-main">
+
+        <div class="heading">Follow Us</div>
+
+        <div class="social-media">
+            <img src="{% static 'courses/images/fb-footer-icon.png' %}" alt="">
+            <img src="{% static 'courses/images/footer-linkedin-icon.png' %}" alt="">
+            <img src="{% static 'courses/images/footer-twitter-icon.png' %}" alt="">
+        </div>
+
+        <div class="partingline"></div>
+
+        <div class="footer-end">
+
+            <p> &#169 knowboxx</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

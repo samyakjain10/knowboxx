@@ -1,0 +1,265 @@
+@font-face{
+    font-family: Poppins;
+    src: url(/fonts/poppins.medium.ttf);
+}
+
+body{
+    border: 0;
+    margin-top: 200px;
+    background-image: linear-gradient(#1285E4,#0BB7E2,#05DBE1,#00F9DF);
+}
+
+.circle{
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    left: 1150px;
+    top: -38px;
+    border-radius: 350px;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+}
+
+.circle1{
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    left: -220px;
+    top: 625px;
+    border-radius: 350px;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+}
+
+.circle2{
+    position: absolute;
+    border-radius: 400px;
+    width: 835px;
+    height: 800px;
+    left: 975px;
+    top: 1170px;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+}
+
+.circle3{
+    position: absolute;
+    border-radius: 350px;
+    width: 635px;
+    height: 630px;
+    left: -245px;
+    top: 1830px;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+}
+
+.about-us-main{
+    width: 100%;
+    height: 160px;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+}
+
+.border-1{
+    width: 46.8%;
+    height: 10px;
+    background: #EEEEEE;
+}
+
+
+.about-us-main p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 72px;
+    text-align: center;   
+    color: #FFFFFF;
+}
+
+.border-2{
+    margin-left: 53%;
+    width: 46.8%;
+    height: 10px;
+    background: #EEEEEE;
+}
+
+.who-are-we{
+    
+    margin: auto;
+    width: 65.1%;
+    height: 370px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+}
+
+.who-are-we-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.who-are-we-head{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+
+}
+
+.who-are-we-cont{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.mission-vision{
+    margin: auto;
+    width: 65.1%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 300px;
+
+}
+
+.mission{
+    width: 31.8%;
+    height: 370px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mission-text{
+
+    width: 50%;
+    margin-top: 20%;
+}
+
+.mission-head{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.mission-cont{
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.vision{
+    width: 37.8%;
+    height: 370px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vision-text{
+    width: 55%;
+    margin-top: 20%;
+}
+
+.vision-head{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.vision-cont{
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.what-we-do{
+    
+    margin: auto;
+    width: 65.1%;
+    height: 370px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+}
+
+.what-we-do-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.what-we-do-head{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+
+}
+
+.what-we-do-cont{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.book-now{
+    width: 62.5%;
+    height: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    margin: auto;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    background: #FFFFFF;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.book-now-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.text{
+    width: 60%;
+    height: 140px;
+    font-family: Poppins;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+
+}
+
+.book-now-btn{
+    border: none;
+    width: 35%;
+    height: 60px;
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: left;
+    color: #0DA3E2;
+
+}

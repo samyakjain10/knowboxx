@@ -1,0 +1,220 @@
+@font-face{
+    font-family: Poppins;
+    src: url(/fonts/poppins.medium.ttf);
+}
+body{
+    margin: 0;
+    border: 0;
+}
+
+label[for="id_login"]{
+    display: none;
+}
+
+label[for="id_password"]{
+    display: none;
+}
+
+.login-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-heading{
+    margin: auto;
+    width: 180px;
+    height: 60px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 44px;
+    color: #128AE4;
+    margin-bottom: 100px;
+
+}
+
+.login-div1{
+    width: 378px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mobile-no{
+    border: none;
+    width: 378px;
+    height: 40px;
+    background: #E0E0E0;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #818181;
+    text-align: center ;
+    background: #E0E0E0;
+    border-radius: 10px;
+
+}
+
+.otp-div{
+    width: 378px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.otp-div button{
+    border: none;
+    width: 174px;
+    height: 40px;
+    background: #128AE4;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.otp-div input{
+    border: none;
+    width: 174px;
+    height: 40px;
+    background: #E0E0E0;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    text-align: center;
+    color: #818181;
+
+
+}
+
+.resend-otp{
+    border: none;
+    background-color: white;
+    width: 95px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    margin-left: 75%;
+    color: #0EA8E3;
+
+}
+
+.partition{
+    width: 150px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.partition h1{
+    margin: auto;
+    width: 60px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    color: #151823;
+
+}
+
+.partition div{
+    margin: auto;
+    height: 140px;
+    width: 0px;
+    border: 2px solid black;
+
+}
+
+.login-div2{
+    width: 380px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-div2 input{
+    border: none;
+    width: 378px;   
+    height: 40px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #818181;
+    background: #E0E0E0;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.checkbox{
+    margin: 0 auto 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#id_remember{
+    margin: 0 auto 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 30px;
+    background: #E0E0E0;
+    border-radius: 5px;
+
+}
+
+label[for="id_remember"]{
+    margin: 0 auto 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: Poppins;
+    font-size: 16px;
+    color: #818181;
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-btn{
+
+    border: 0;
+    width: 380px;
+    height: 60px;
+    background: #128AE4;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+.signup-option{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup-option p{
+    
+    width: 260px;
+    height: 60px;
+    font-family: Poppins;
+    font-size: 16px;
+    text-align: right;
+    color: #151823;
+
+}
+
+.signup-option span{
+    color: #1289E4;
+}

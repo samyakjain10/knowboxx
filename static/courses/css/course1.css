@@ -1,0 +1,329 @@
+@font-face{
+    font-family: Poppins;
+    src: url(/fonts/poppins.medium.ttf);
+}
+
+body{
+    background-image: linear-gradient(#1285E4,#0BB7E2,#05DBE1,#00F9DF);
+    border: 0;
+    margin: 0;
+}
+
+.course-info{
+    margin: auto;
+    margin-top: 300px;
+    width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:300px ;
+
+}
+
+.info-1{
+    width: 483px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div1{
+    width: 240px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 44px;
+    color: #0DA3E2;
+    text-align: center;
+
+}
+
+.div2{
+    width: 485px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    font-family: Poppins;
+    font-size: 36px;
+    text-align: center;
+    color: #282A35;
+
+}
+
+.div3{
+    width: 485px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: center;
+    color: #282A35;
+
+}
+
+.div3 span{
+    color: #0DA3E2;
+}
+
+.info-2{
+    width: 280px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.course-class{
+    margin: auto;
+    width: 1700px;
+    height: 600px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom:300px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+.course-class p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.course-describe{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.description{
+    width: 440px;
+    height: 380px;
+    font-family: Poppins;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #282A35;
+}
+
+.course-btns{
+    width: 440px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trial-class{
+    
+    border: none;
+    width: 306px;
+    height: 80px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #282A35;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+
+.enroll-now{
+    border: none;
+    width: 301px;
+    height: 80px;
+    background: #0DA3E2;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;   
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.batches{
+    
+    margin: auto;
+    width: 1700px;
+    height: 330px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.batches p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.batch-day{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.weekday{
+    height: 200px;
+    width: 800px;
+}
+
+.weekday p{
+    margin: auto;
+    width: 174px;
+    height: 36px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+
+}
+
+.weekend{
+    height: 200px;
+    width: 800px;
+}
+
+.weekend p{
+    margin: auto;
+    width: 174px;
+    height: 36px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+
+}
+
+.days{
+
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.days p{
+    width: 200px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: #000000;
+}
+
+.pricing{
+    margin: auto;
+    width: 1700px;
+    height: 600px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.pricing h2{
+
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.pricing-main{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.ratio-duration{
+    
+    width: 240px;
+    height: 120px;
+
+}
+
+.ratio-duration p{
+    
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    align-items: center;
+    color: #000000;
+
+}
+
+.ratio-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ratio-btns button{
+    border: none;
+    width: 100px;
+    height: 60px;
+    background: #FFFFFF;
+    font-size: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+#duration{
+    font-family: Poppins;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.price{
+    width: 276px;
+    height: 120px;
+}
+
+.price p{
+    
+font-family: Poppins;
+font-weight: 500;
+font-size: 24px;
+text-align: center;
+color: #000000;
+
+
+}
+
+.price div{
+    background: #E6EDF4;
+    border-radius: 20px;
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #1289E4;
+
+}

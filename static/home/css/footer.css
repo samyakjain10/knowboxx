@@ -1,0 +1,84 @@
+
+@font-face{
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Black.ttf);
+}
+#row3{
+    position: absolute;
+width: 101%;
+height: 200px;
+left: 0px;
+margin-top: 210%;
+background: #0DA3E2;
+}
+#fdiv1{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 657px;
+    bottom: 147px;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+}
+#fdiv2{
+    position: absolute;
+width: 120px;
+height: 44px;
+left: 673px;
+bottom: 23px;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+#fdiv3{
+    position: absolute;
+    width: 80%;
+    height: 0px;
+    left: 164px;
+    bottom: 77px;
+  
+    border:  1px solid #0E668A;
+}
+
+#copyright{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 647px;
+    bottom: 33px;
+    color: #FFFFFF;  
+    
+}
+#facebook{
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    left: 652px;
+bottom: 111px;  
+color: #FFFFFF;  
+}
+#linkedIn{
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    left: 707px;
+bottom: 111px;
+color: #FFFFFF;  
+}
+#twitter{
+    position: absolute;
+    width: 22px;
+    height: 17.94px;
+    left: 766px;
+bottom: 111px;
+color: #FFFFFF;  
+}

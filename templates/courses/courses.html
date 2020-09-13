@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'courses/css/courses.css' %}">
+    <link rel="stylesheet" href="{% static 'courses/css/footer1.css' %}">
+    <link rel="stylesheet" href="{% static 'courses/css/header1.css' %}">
+
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+
+    <header>
+
+
+        <div class="row" id="row1">
+            <img id="image1" src="{% static 'courses/images/LOGO.svg' %}">
+            <div id="div1">knowboxx</div>
+            <a href="{% url 'homepage' %}">
+                <div id="div2">Home</div>
+            </a>
+            <a href="{% url 'aboutus' %}">
+                <div id="div3">About Us</div>
+            </a>
+            <a href="{% url 'coursespage' %}">
+                <div id="div5">Courses</div>
+            </a>
+            <a href="{% url 'testspage' %}">
+                <div id="div4">Test</div>
+            </a>
+            <a href="{% url 'contactpage' %}">
+                <div id="div6">Contact Us</div>
+            </a>
+            <a>
+                <div id="page_login"></div>
+            </a>
+        </div>
+    </header>
+
+    <!--Courses-->
+    <div id="coursespage">Courses</div>
+
+    <!--Demo-->
+    <div id="demo_box">
+        <div id="demo_text">
+            Try out a class for free
+            <div id="demo_text2">Check out all our courses, and try your first class for free!</div>
+        </div>
+        <img src="{% static 'courses/images/vector.svg' %}" id="demo_img">
+        <button id="demo_button">Book Free Class
+    </div></button>
+    </div>
+
+    <!--Benefits-->
+    <div id="benefits1">
+        <img src="{% static 'courses/images/Courses 1.svg' %}" id="cap">
+        <div id="text1">Providing right direction , right tool and right approach to Learners</div>
+    </div>
+
+    <div id="benefits2">
+        <img src="{% static 'courses/images/Courses 2.svg' %}" id="pen">
+        <div id="text2">Take a FREE assessment test to understand your potentials and strengths</div>
+    </div>
+
+    <div id="benefits3">
+        <img src="{% static 'courses/images/Courses 3.svg' %}" id="curious">
+        <div id="text3">Receive personalised level recommendation based on the FREE assessment test</div>
+    </div>
+
+    <!--Courses Bar-->
+    <div id="course_bar">
+        <div class="courses_select">
+            <select name="Subject" id="subject" aria-placeholder="Subject">
+                <option value="1">Subject</option>
+                <option value="2">Maths</option>
+                <option value="3">Maths</option>
+
+            </select>
+            <select name="Class" id="class">
+                <option value="5">Class</option>
+                <option value="6">2</option>
+                <option value="7">3</option>
+
+
+            </select>
+            <select name="Batch" id="batch" aria-placeholder="">
+                <option value="9">Batch</option>
+                <option value="10">Weekend</option>
+                <option value="11">WeekDay</option>
+
+
+            </select>
+            <select name="Program" id="program" aria-placeholder="">
+                <option value="13">Program</option>
+                <option value="14">CBSE</option>
+                <option value="15">JEE</option>
+
+
+            </select>
+        </div>
+        <button id="course_search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </div>
+
+
+    <!--Course Card-->
+    <div class="container">
+        <div class="items" id="c1">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c2">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c3">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c4">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c5">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c6">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c7">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c8">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+        <div class="items" id="c9">
+            <div id="course_line1"></div>
+            <div id="board1">CBSE</div>
+            <div id="week1">Weeks</div>
+            <div id="description1">Description</div>
+            <div id="class1">6</div>
+            <div id="course_name1">Course Name</div>
+            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+        </div>
+
+    </div>
+
+
+    <footer id="footer">
+
+        <div class="row" id="row3">
+            <div id="fdiv1">Follow Us</div>
+            <div id="fdiv2">knowboxx</div>
+            <div id="fdiv3"></div>
+            <div id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></div>
+            <a id="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a id="linkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a id="twitter" href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

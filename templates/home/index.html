@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/header.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header>
+        <div class="container">
+
+            <div class="row" id="row1">
+                <img id="image1" src="{% static 'home/images/LOGO.svg' %}">
+                <div id="div1">knowboxx</div>
+                <a href="{% url 'homepage' %}">
+                    <div id="div2">Home</div>
+                </a>
+                <a href="{% url 'aboutus' %}">
+                    <div id="div3">About Us</div>
+                </a>
+                <a href="{% url 'coursespage' %}">
+                    <div id="div5">Courses</div>
+                </a>
+                <a href="{% url 'testspage' %}">
+                    <div id="div4">Test</div>
+                </a>
+                <a href="{% url 'contactpage' %}">
+                    <div id="div6">Contact Us</div>
+                </a>
+                <a>
+                    <div id="page_login"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--Upper_Background-->
+
+    <img id="upper_back">
+    <div id="home_back"></div>
+    <div id="back_text">Unbox the new way of learning </div>
+    <div id="simple_text"> Live tutoring platform combined <br>with online teaching</div>
+    <button type="button" class="btn btn-primary" id="free_trial" onClick="parent.open('https://forms.gle/4gM3vkzoXhcoxtHTA/')">Book free trial now</button>
+    <div id="search_back">
+        <div id="search_text">Take a demo class & start your journey today</div>
+    </div>
+    <input type="search" id="input" name="search">
+    <div id="search"></div>
+    <button id="search_part">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+
+
+    <!--Content-->
+    <div id="content_main">
+        <div id="our_courses">OUR COURSES</div>
+        <a href="#" id="see_all">See All</a>
+        <!--Box1-->
+        <div id="box1"></div>
+        <div id="box11">LEVEL MASTERCLASS</div>
+        <div id="box111">maths</div>
+        <div id="box1111">Classes 4-6</div>
+        <a href="#" id="box11111">More</a>
+        <!--Box2-->
+        <div id="box2"></div>
+
+        <div id="box22">LEVEL MASTERCLASS</div>
+        <div id="box222">maths</div>
+        <div id="box2222">Classes 4-6</div>
+        <a href="#" id="box22222">More</a>
+        <!--Box3-->
+        <div id="box3"></div>
+        <div id="box33">LEVEL MASTERCLASS</div>
+        <div id="box333">maths</div>
+        <div id="box3333">Classes 4-6</div>
+        <a href="#" id="box33333">More</a>
+
+
+    </div>
+    <!--Why KnowBoxx-->
+    <div id="why_knowboxx">why knowboxx?</div>
+    <div id="why_knowboxx_content">We not only help students understand and learn but instill in them,
+        the confidence to tackle real world challenges and competitive exams like Olympiads, KVPY, NTSE, NEET and JEE
+        along the way.</div>
+
+    <!--Attributions-->
+    <div id="learn">Learn from industry experts</div>
+    <div id="personalized">Personalised Learning</div>
+    <div id="live">Live and Interactive</div>
+    <div id="record"> Get track record of individual user</div>
+    <img id="learn_img1" src="{% static 'home/images/Vector 1.svg' %}">
+    <img id="learn_img2" src="{% static 'home/images/Vector 2.svg' %}">
+    <img id="learn_img3" src="{% static 'home/images/Vector 3.svg' %}">
+    <img id="learn_img4" src="{% static 'home/images/Vector 4.svg' %}"> <!--Booking A Class-->
+    <div id="booking">
+        <div id="booking_text">
+            Text Prompt for Booking a Free Class
+        </div>
+        <img src="{% static 'home/images/vector.svg' %}" id="text_img">
+        <a id="book_now">Book Now ></a>
+    </div>
+
+
+
+    <!--Blog-->
+    <div id="blog_box">
+
+        <div id="our_blog">our blog</div>
+        <div id="card1">
+            <div id="line1"> </div>
+            <div id="blog_title">Blog Title</div>
+            <div id="date">Date</div>
+            <div id="author">Author</div>
+            <div id="post">Post</div>
+            <img src="{% static 'home/images/blog1.svg' %}" id="blog1">
+
+        </div>
+        <div id="card2">
+            <div id="line2"> </div>
+            <div id="blog_title2">Blog Title</div>
+            <div id="date2">Date</div>
+            <div id="author2">Author</div>
+            <div id="post2">Post</div>
+            <img src="{% static 'home/images/blog2.svg' %}" id="blog2">
+
+        </div>
+
+    </div>
+
+    <!--Footer-->
+
+    <footer id="footer">
+
+        <div class="row" id="row3" style="margin-top: 280%;">
+            <div id="fdiv1">Follow Us</div>
+            <div id="fdiv2">knowboxx</div>
+            <div id="fdiv3"></div>
+            <div id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></div>
+            <a id="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a id="linkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a id="twitter" href="#"><i class="fab fa-twitter"></i></a>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
