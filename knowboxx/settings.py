@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 #'allauth.account',
 #'allauth.socialaccount',
 #'allauth.socialaccount.providers.google',
-#SITE_ID = 1
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,10 +137,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot/')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot/')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #LOGIN_REDIRECT_URL = '/'
 

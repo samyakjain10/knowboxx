@@ -55,7 +55,7 @@
             <div id="demo_text2">Check out all our courses, and try your first class for free!</div>
         </div>
         <img src="{% static 'courses/images/vector.svg' %}" id="demo_img">
-        <button id="demo_button">Book Free Class
+        <button id="demo_button" onClick="parent.open('https://forms.gle/4gM3vkzoXhcoxtHTA/')">Book Free Class
     </div></button>
     </div>
 
@@ -114,88 +114,21 @@
 
     <!--Course Card-->
     <div class="container">
+        
+        {% for course in courses %}
+        
         <div class="items" id="c1">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
+            <div class="course_line1"></div>
+            <div class="board1"> {{ course.board }}</div>
+            <div class="week1">{{ course.duration }}</div>
+            <div class="description1">{{ course.content | safe | truncatechars:100}}</div>
+            <div class="class1">{{ course.class1 }}</div>
+            <div class="course_name1">{{course.name}}</div>
+            <img class="course_img1" src="{{course.featuredImage.url}}">
         </div>
-        <div class="items" id="c2">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c3">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c4">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c5">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c6">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c7">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c8">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-        <div class="items" id="c9">
-            <div id="course_line1"></div>
-            <div id="board1">CBSE</div>
-            <div id="week1">Weeks</div>
-            <div id="description1">Description</div>
-            <div id="class1">6</div>
-            <div id="course_name1">Course Name</div>
-            <img id="course_img1" src="{% static 'courses/images/blog1.svg' %}">
-        </div>
-
+        
+        {% endfor %}
+        
     </div>
 
 

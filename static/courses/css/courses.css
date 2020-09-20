@@ -11,7 +11,6 @@
     top: 100px;
     background-image:url(../images/back_c.jpg);
     background-size: cover;
-    
 }
 
 #coursespage{
@@ -151,13 +150,13 @@ color: #FFFFFF;
 
 #benefits3{
     position: absolute;
-width: 378px;
-height: 300px;
-left: 939px;
-top: 720px;
-background: #0DA3E2;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-border-radius: 40px;
+    width: 378px;
+    height: 300px;
+    left: 939px;
+    top: 720px;
+    background: #0DA3E2;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
 }
 
 #curious{
@@ -289,7 +288,7 @@ filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
 text-align: center;
 }
 
-#course_line1{
+.course_line1{
     position: absolute;
 left: 0%;
 right: 0%;
@@ -298,7 +297,7 @@ bottom: 44%;
 border: 1px solid #B6C2D3;
 }
 
-#board1{
+.board1{
     position: absolute;
 left: 58.2%;
 right: 7.43%;
@@ -307,7 +306,7 @@ bottom: 10.5%;
 
 }
 
-#week1{
+.week1{
     position: absolute;
 left: 10.05%;
 right: 56.11%;
@@ -315,19 +314,18 @@ top: 81.5%;
 bottom: 10.5%;
 }
 
-#description1{
+.description1{
     position: absolute;
-left: 10%;
-right: 10%;
+left: 6%;
 top: 60%;
-bottom: 24%;
-font-size: 16px;
+font-size: 13px;
 line-height: 24px;
+width: 330px;
 color: #4D4C4E;
 
 }
 
-#class1{
+.class1{
     position: absolute;
 left: 76.72%;
 right: 7.41%;
@@ -344,7 +342,7 @@ color: #000000;
 }
 
 
-#course_name1{
+.course_name1{
     position: absolute;
 left: 10%;
 right: 26.51%;
@@ -358,5 +356,14 @@ align-items: center;
 color: #000000;
 
 }
+.course_img1{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 60%;
+width: 378px;
+height: 170px;
 
-
+border-radius: 20px 20px 0px 0px;
+}

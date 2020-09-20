@@ -18,6 +18,11 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "Knowboxx Admin"
+admin.site.site_title = "Knowboxx Admin Portal"
+admin.site.index_title = "Knowboxx Admin Portal"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     
@@ -26,5 +31,5 @@ urlpatterns = [
     path('tests/',include('tests.urls')),
     path('courses/',include('courses.urls')),
     path('aboutus/',include('aboutUs.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 #path('accounts/', include('allauth.urls')),
